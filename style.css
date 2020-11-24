@@ -1,0 +1,782 @@
+body{
+    top: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--button);
+    border-radius: 0px;
+    background-color: #000000;
+    height: 150px;
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--side-bar);
+    background-color: #000000;
+}
+
+*{
+    top: 0%;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.logo1{
+    max-width: 4%;
+    margin-top: 5px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.664);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    text-transform: uppercase;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 7px 13px;
+}
+
+a.active,a:hover{
+    background-color: brown;
+    transition: .5s;
+}
+.checkbtn{
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 50px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+label.logo{
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0px 90px;
+    text-transform: uppercase;
+}
+
+
+ /* navigation end  */
+
+
+
+.container p{
+    text-align: center;
+    padding: 10px 0px;
+}
+.container{
+    padding: 8%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.493) url(image/test-img.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container h1{
+    margin-bottom: 5px; 
+    padding-top: 10%; 
+    font-size: 4rem;  
+}
+
+.container button{
+    padding: 1.5% 4%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    background: black;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.container button:hover{
+    background: white;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.container img{
+    max-width: 10rem;
+    margin-top: 6rem;
+    animation: rayes 2s 2s infinite linear;
+    transition: 1s;
+}
+ 
+.container a:hover{
+    background: none;
+}
+
+@keyframes rayes{
+    0%{
+        -webkit-transform: translateY(0px);
+        transition: 1s;
+    }
+    100%{
+        -webkit-transform: translateY(20px);
+        transition: 1s;
+    }
+
+}
+
+
+.grid-section{
+    padding: 10% 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    background: url(image/vector-mountain-clipart-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.grid-section h1{
+    margin-block-start: -5%;
+    text-transform: uppercase;
+}
+
+.grid-categories{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+}
+
+.grid-row {
+    padding: 8%;
+    background-blend-mode: darken;
+    color: white;
+    margin-top: 20%;
+}
+
+.grid-row:hover {
+    background: rgba(0, 0, 0, 0.87);
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.521);
+}
+
+.grid-img-1{
+    background: rgba(0, 0, 0, 0.425) url(image/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-img-2{
+    background: rgba(0, 0, 0, 0.425) url(image/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-img-3{
+    background: rgba(0, 0, 0, 0.425) url(image/img-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid-main{
+    text-align: center;
+}
+
+.grid-main p{
+    padding-top: 10px;
+    padding-bottom: 15%;
+}
+
+.grid-row button{
+    padding: 3% 5%;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.grid-row button:hover{
+    border-radius: 5px;
+}
+
+.img-popular{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+    padding: 4%;
+}
+
+.span-img{
+    padding: 30%;
+    display:flex;
+    cursor: pointer;
+}
+
+
+.span-img-1{
+    background: url(image/evado_1_bright_graphite_white_shine.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.span-img-1:hover{
+    background: url(image/rower-kross-evado-1-0-2-123467-f-sk6-w1550-h1080_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.span-img-2{
+    background: url(image/jetplusgold.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35%;
+    margin-bottom: -10%;
+}
+
+.span-img-2:hover{
+    background: url(image/rower-kross-evado-1-0-2-123467-f-sk6-w1550-h1080_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30%;
+    margin-bottom: 0%;
+}
+
+.span-img-3{
+    background: url(image/rower-kross-evado-1-0-2-123467-f-sk6-w1550-h1080_1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.span-img-3:hover{
+    background: url(image/evado_1_bright_graphite_white_shine.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cylce-img{
+    padding: 0px;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fixed-price h4{
+    margin-bottom: 5px;
+  
+}
+
+.fixed-price{
+    margin-right: 20px;
+    margin-top: auto;
+
+}
+
+.option-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+.option-button button:nth-child(2){
+    background: grey;
+    color: white;
+    border: 1px solid white;
+}
+
+.option-button button:hover:nth-child(2){
+    background: white;
+    border: 1px solid #5696c9;
+    color: #5696c9;
+    transition: 1s;
+}
+
+.option-buy button:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+.option-button button{
+    padding: 13px 20px;
+    font-size: 15px;
+    border: 1px solid black;
+    outline: none;
+    margin: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+}
+
+.option-button button:hover:nth-child(1){
+    background: black;
+    color: white;
+    transition: 1s;
+}
+
+.popular-bikes h1{
+    text-align: center;
+    padding: 4%;
+    text-transform: uppercase;
+}
+
+.popular-bikes{
+    padding: 5%;
+}
+
+.price{
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.icon-heart{
+    color: red;
+    transition: 1s;
+}
+
+.form-section{
+    padding: 5% 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background: url(image/Road-Cyclists-to-Try-a-Mountain-Bike-1140x530.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.form-section span{
+    display: flex;
+}
+
+.form-section span input{
+    margin-left: 5px;
+
+}
+    
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6px;
+}
+
+form input{
+    margin-bottom: 10px;
+    padding: 3% 10% 3% 2%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid rgba(128, 128, 128, 0.733);
+    outline: none;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+    background: grey;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input[type=email], [type=submit], textarea{
+    margin-left: 4px;
+}
+
+
+input[type=submit]:hover{
+    background: black;
+    color: white;
+    transition: 1s;
+}
+
+.form-section h1{
+    text-transform: uppercase;
+}
+
+.form-section p{
+    padding: 4% 0%;
+    
+}
+
+input:focus{
+    border: 2px solid black;
+}
+
+textarea:focus{
+    border: 2px solid black;
+}
+
+textarea{
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 8px;
+    border: 2px solid rgba(128, 128, 128, 0.733);
+    outline: none;
+}
+
+/* blog start*/
+
+.blog{
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.212);
+}
+
+.blog-section{
+    padding: 2%;
+}
+
+.blog-h1{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 8%;
+}
+
+.blog-text button{
+    padding: 7px 20px;
+    font-size: 13px;
+    border: 1px solid black;
+    outline: none;
+    margin: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+}
+
+.blog-text button:hover{
+    background: black;
+    color: white;
+    transition: 1s;
+}
+
+
+.blog-text a{
+    padding: 0px 5px;
+}
+
+.blog-text a:hover{
+    background: black;
+    color: white;
+}
+
+
+.blog-row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+    padding: 6%;
+}
+
+.blog-img-1{
+    background: url(image/pexels-photo-1068523.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25% 50%;
+}
+
+.blog-img-1:hover{
+    opacity: .5;
+}
+
+
+.blog-img-2:hover{
+    opacity: .5;
+}
+
+
+.blog-img-3:hover{
+    opacity: .5;
+}
+
+
+
+.blog-img-2{
+    background: url(image/pexels-photo-1509428.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25% 50%;
+    
+}
+
+.blog-img-3{
+    background: url(image/pexels-photo-990818.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25% 50%;
+
+}
+
+.blog-text{
+    padding: 7% 3%;
+    margin-top: 23%;
+    margin-right: 16%;
+    font-size: 12px;
+}
+
+.blog-text > h2{
+    padding: 5% 0%;
+    font-size: 18px;
+}
+
+.brand{
+    padding: 2%;
+}
+
+.brand h1{
+    text-align: center;
+    padding: 17px;
+    text-transform: uppercase;
+}
+
+.brand-img{
+    display: flex;
+    justify-content: center;
+}
+
+.brand-img img{
+    padding: 4% 3%;
+    cursor: pointer;
+}
+
+@media (max-width: 1028px){
+    .container h1{
+        font-size: 2rem;
+    }
+    .option-button button {
+        padding: 11px 11px;
+        font-size: 13px;
+        border: 1px solid black;
+        outline: none;
+        margin: 2px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: white;
+        cursor: pointer;
+    }
+
+    .fixed-price {
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .form-section span input {
+        margin-left: 6px;
+        width: 12rem;
+    }
+
+
+}
+
+@media (max-width: 480px){
+    .container h1{
+        font-size: 1.3rem;
+        margin-top: 30%;
+    }
+    .container p{
+        font-size: 10px;
+    }
+
+    .grid-categories{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+    }
+
+    .grid-section{
+        padding: 21% 10%;
+    }
+
+    .img-popular{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5%;
+        padding: 4%;
+    }
+
+    .option-button button {
+        padding: 13px 20px;
+        font-size: 9px;
+        border: 1px solid black;
+        outline: none;
+        margin: 2px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: white;
+        cursor: pointer;
+    }
+
+    .fixed-price{
+        font-size: 12px;
+        margin-top: auto;
+    }
+
+    .form-section{
+        padding: 10%;
+        margin-top: 75px;
+    }
+
+    form{
+        width: 15rem;
+    }
+
+    .form-section span {
+        display: flex;
+        width: 17rem;
+        flex-direction: column;
+        margin-right: -1px;
+    }
+
+    .form-section span input {
+        margin-left: 6px;
+        width: 14.4rem;
+    }
+
+    .popular-bikes h1 {
+        text-align: center;
+        padding: 17px;
+        text-transform: uppercase;
+        margin-bottom: 39px;
+        
+    }
+
+    .form-section p {
+        padding: 4% 0%;
+        margin: 19px 15px;
+    }
+
+    .blog-row{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 15%;
+        padding: 6%;
+    }
+
+    .blog-section {
+        /* padding-top: 28%; */
+        padding-bottom: 46%;
+        padding-top: 36%;
+    }
+
+    .blog-h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 38%;
+    }
+
+    .container img {
+        max-width: 3rem;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+
+    nav ul li{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+        font-size: 17px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+        margin: 50px 0;
+      }
+      a:hover,a.active{
+        background: none;
+        color: rgb(10, 149, 241);
+      }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0%;
+    }
+    .logo1{
+        max-width: 3rem;
+        margin-top: 4%;
+    }
+    .logo1 {
+        max-width: 3rem;
+        margin-top: 2%;
+    }
+}
